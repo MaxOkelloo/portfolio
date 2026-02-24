@@ -60,16 +60,23 @@ section.show {
   background: #ffffff;
 }
 
-/* HERO IMAGE */
+/* HERO IMAGE - RESPONSIVE */
 .hero-right .profile-img {
-  width: 300px;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
   border-radius: 50%;
+  object-fit: cover;
+  aspect-ratio: 1/1;
 }
 
-/* PROJECTS */
-.projects {
-  padding: 80px 10%;
-  text-align: center;
+/* PROJECT CARDS - RESPONSIVE IMAGES */
+.project-card img {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 .project-grid {
@@ -82,11 +89,6 @@ section.show {
 .project-card {
   background: #1a1a1a;
   padding: 20px;
-  border-radius: 10px;
-}
-
-.project-card img {
-  width: 100%;
   border-radius: 10px;
 }
 
@@ -134,3 +136,130 @@ section.show {
   padding: 80px 10%;
   text-align: center;
 }
+
+/* MOBILE RESPONSIVE STYLES */
+@media screen and (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 0 5%;
+    height: auto;
+    min-height: 100vh;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  .hero-left h1 {
+    font-size: 40px;
+  }
+
+  .hero-left h2 {
+    font-size: 24px;
+  }
+
+  .hero-left p {
+    font-size: 16px;
+    margin: 20px auto;
+  }
+
+  .hero-right .profile-img {
+    max-width: 250px;
+  }
+
+  .projects, .skills, .contact {
+    padding: 60px 5%;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .project-card img {
+    max-height: 180px;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
+
+/* SMALL MOBILE DEVICES */
+@media screen and (max-width: 480px) {
+  .hero-left h1 {
+    font-size: 32px;
+  }
+
+  .hero-left h2 {
+    font-size: 20px;
+  }
+
+  .hero-right .profile-img {
+    max-width: 200px;
+  }
+
+  .projects h2, .skills h2, .contact h2 {
+    font-size: 24px;
+  }
+
+  .project-card {
+    padding: 15px;
+  }
+
+  .project-card img {
+    max-height: 150px;
+  }
+
+  .skill {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .contact .btn {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+  }
+}
+
+/* TABLET DEVICES */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .hero {
+    padding: 0 5%;
+  }
+
+  .hero-left h1 {
+    font-size: 48px;
+  }
+
+  .hero-right .profile-img {
+    max-width: 280px;
+  }
+
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* LARGE SCREENS */
+@media screen and (min-width: 1400px) {
+  .hero-left h1 {
+    font-size: 72px;
+  }
+
+  .hero-left h2 {
+    font-size: 36px;
+  }
+
+  .hero-right .profile-img {
+    max-width: 350px;
+  }
+
+  .projects, .skills, .contact {
+    padding: 100px 15%;
+  }
+}
+
+/* FIX FOR INDEX.HTML - REMOVE INLINE HEIGHT/WIDTH */
+/* You should remove the height="100" width="100" from the first image in index.html */
