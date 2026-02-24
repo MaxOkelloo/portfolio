@@ -1,147 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maxwel - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Max | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="logo">Maxwel</div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1>Hi, I'm Maxwel</h1>
-                <p>Web Developer & Designer</p>
-                <a href="#projects" class="btn btn-primary">View My Work</a>
-            </div>
-        </div>
-    </section>
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-left">
+      <h1>Hi, I'm Max 👋</h1>
+      <h2>Frontend Developer</h2>
+      <p>I design and build modern, responsive websites that users love.</p>
+      <a href="#projects" class="btn">View My Work</a>
+    </div>
+    <div class="hero-right">
+      <img src="images/cyber-profile.png" alt="Max Profile" class="profile-img">
+    </div>
+  </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>I'm a passionate web developer with expertise in creating dynamic and responsive websites. I love turning ideas into reality with clean, efficient code.Also experienced database manager with fiVE   years experience in database management and optimization.</p>
-            <div class="skills">
-                <h3>Skills</h3>
-                <ul>
-                    <li>HTML & CSS</li>
-                    <li>JavaScript</li>
-                    <li>Web Development and design</li>
-                    <li>Cybersecurity</li>
-                </ul>
-            </div>
-        </div>
-    </section>
+  <!-- PROJECTS SECTION -->
+  <section id="projects" class="projects">
+    <h2>My Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <img src="images/project1.png" alt="Project 1">
+        <h3>E-commerce Website</h3>
+        <p>Built with HTML, CSS, JavaScript</p>
+        <a href="#" class="btn-small">Live Demo</a>
+        <a href="#" class="btn-small">GitHub</a>
+      </div>
+      <div class="project-card">
+        <img src="images/project2.png" alt="Project 2">
+        <h3>Portfolio Website</h3>
+        <p>Built with HTML, CSS, JS, deployed on GitHub Pages</p>
+        <a href="#" class="btn-small">Live Demo</a>
+        <a href="#" class="btn-small">GitHub</a>
+      </div>
+    </div>
+  </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2>My Projects</h2>
-            <div class="project-grid">
-                <div class="project-card">
-                    <h3>Web Development And Design</h3>
-                    <p>I am a web developer focused on building responsive, user-friendly, and performance-driven websites and web applications. I combine clean design principles with efficient, scalable code to create seamless digital experiences across all devices.</p>
-                    <a href="#" class="btn btn-secondary">View Project</a>
-                </div>
-                <div class="project-card">
-                    <h3>Cybersecurity Project</h3>
-                    <p>A comprehensive cybersecurity project focused on network security and data protection. Focusing on secure coding practices and threat mitigation. Our main focus is on protection based  on Confidentiality , Integrity, and Availability (CIA Triad).</p>
-                    <a href="#" class="btn btn-secondary">View Project</a>
-                </div>
-                <div class="project-card">
-                    <h3>Project 3</h3>
-                    <p>A creative portfolio site showcasing my work.</p>
-                    <a href="#" class="btn btn-secondary">View Project</a>
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- SKILLS SECTION -->
+  <section class="skills">
+    <h2>My Skills</h2>
+    <div class="skill-grid">
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">React</div>
+      <div class="skill">Git & GitHub</div>
+    </div>
+  </section>
 
-    <!-- Gallery Section -->
-    <section id="gallery" class="gallery">
-        <div class="container">
-            <h2>Gallery update</h2>
-            <div class="gallery-grid">
-                <div class="gallery-item">
-                    <img src="cybers"Gallery Image 1">
-                    <div class="gallery-overlay">Mountain View</div>
-                </div>
-                <div class="gallery-item">
-                    <img src="cybersecurity.jpg" alt="Gallery Image 2">
-                    <div class="gallery-overlay">Sunset Beach</div>
-                </div>
-                <div class="gallery-item">
-                    <img src="cybersecurity2.jpg" alt="Gallery Image 3">
-                    <div class="gallery-overlay">Urban Design</div>
-                </div>
-                <div class="gallery-item">
-                    <img src="cybersecurity3.jpg" alt="Gallery Image 4">
-                    <div class="gallery-overlay">Nature Walk</div>
-                </div>
-                <div class="gallery-item">
-                    <img src="cybersecurity4.jpg" alt="Gallery Image 5">
-                    <div class="gallery-overlay">City Lights</div>
-                </div>
-                <div class="gallery-item">
-                    <img src="cybersecurity5.jpg" alt="Gallery Image 6">
-                    <div class="gallery-overlay">Forest Trail</div>
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- CONTACT SECTION -->
+  <section class="contact">
+    <h2>Contact Me</h2>
+    <p>Feel free to reach out via email or LinkedIn!</p>
+    <a href="mailto:max@example.com" class="btn">Email Me</a>
+    <a href="https://www.linkedin.com/in/MaxOkelloo/" target="_blank" class="btn">LinkedIn</a>
+  </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>Get In Touch</h2>
-            <form class="contact-form">
-                <div class="form-group">
-                    <input type="text" placeholder="Your Name" required>
-                </div>
-                <div class="form-group">
-                    <input type="email" placeholder="Your Email" required>
-                </div>
-                <div class="form-group">
-                    <textarea placeholder="Your Message" rows="5" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Send Message</button>
-            </form>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2026 Maxwel. All rights reserved.</p>
-            <div class="social-links">
-                <a href="#">Twitter</a>
-                <a href="#">LinkedIn</a>
-                <a href="#">GitHub</a>
-            </div>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
