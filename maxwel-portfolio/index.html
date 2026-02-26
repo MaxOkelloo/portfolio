@@ -2,68 +2,165 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Max | Portfolio</title>
+  <title>Max | Cyber / Web Portfolio</title>
+  <!-- Link to external CSS (separated) -->
   <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
+  <!-- Header without name (only logo + navigation) -->
+  <header class="page-header">
+    <div class="logo"><a href="#">◈ M.O.</a></div>
+    <nav class="nav-links">
+      <a href="#hero">Home</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
   <!-- HERO SECTION -->
-  <section class="hero">
+  <section id="hero" class="hero">
     <div class="hero-left">
       <h1>Hi, I'm Max 👋</h1>
-      <h2>Frontend Developer And Cybersecurity Enthusiast</h2>
-      <p>I design and build modern, responsive websites that users love.</p>
-      <a href="#projects" class="btn">View My Work</a>
+      <h2>Frontend Developer & Cybersecurity Enthusiast</h2>
+      <p>I design and build modern, responsive websites with a focus on security. IT graduate specialising in cyber, networking, and web design.</p>
+      <!-- keyword tags (styled as skills) -->
+      <div class="keyword-strip">
+        <span class="skill" style="display:inline-block; margin-right:8px;">#penetration testing</span>
+        <span class="skill" style="display:inline-block; margin-right:8px;">#network automation</span>
+        <span class="skill" style="display:inline-block;">#responsive design</span>
+      </div>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn">View My Work</a>
+        <a href="#contact" class="btn btn-outline">Contact</a>
+      </div>
     </div>
     <div class="hero-right">
-      <img src="images/profile.jpg" alt="Max Profile" class="profile-img">
+      <!-- profile image: replace src with your actual photo (e.g., images/profile.jpg) -->
+      <img src="images/profile.jpg" alt="Max Profile" class="profile-img" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'300\' height=\'300\' viewBox=\'0 0 100 100\'%3E%3Ccircle cx=\'50\' cy=\'50\' r=\'45\' fill=\'%231a2a3a\'/%3E%3Ccircle cx=\'35\' cy=\'40\' r=\'8\' fill=\'%2300ffcc\'/%3E%3Ccircle cx=\'65\' cy=\'40\' r=\'8\' fill=\'%2300ffcc\'/%3E%3Cpath d=\'M30 65 Q50 80,70 65\' stroke=\'%23ffffff\' stroke-width=\'4\' fill=\'none\' stroke-linecap=\'round\' /%3E%3C/svg%3E'">
     </div>
   </section>
 
   <!-- PROJECTS SECTION -->
   <section id="projects" class="projects">
-    <h2>My  Completed ` Projects</h2>
+    <h2>Completed <span class="accent">Projects</span></h2>
     <div class="project-grid">
+      <!-- Project 1: Secure E‑commerce -->
       <div class="project-card">
-        <img src="images/cyber-security-concept-digital-art.jpg" height="100" width="100" alt="Project 1">
-        <h3>E-commerce Website</h3>
-        <p>Built with HTML, CSS, JavaScript</p>
+        <img src="images/cyber-security-concept-digital-art.jpg" alt="Security E-commerce" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'400\' height=\'200\' viewBox=\'0 0 400 200\'%3E%3Crect width=\'400\' height=\'200\' fill=\'%231a2a3a\'/%3E%3Ctext x=\'50\' y=\'120\' fill=\'%2300ffcc\' font-size=\'24\' font-family=\'Roboto\'%3E🛡️ Secure Shop%3C/text%3E%3C/svg%3E'">
+        <h3>Secure E‑commerce (demo)</h3>
+        <p>Frontend with security headers simulation, HTTPS enforcement demo. Built with HTML, CSS, JS.</p>
         <a href="#" class="btn-small">Live Demo</a>
         <a href="#" class="btn-small">GitHub</a>
       </div>
+      <!-- Project 2: Cyber Portfolio -->
       <div class="project-card">
-        <img src="images/cyber-security-concept-digital-art.jpg" alt="Project 2">
-        <h3>Portfolio Website</h3>
-        <p>Built with HTML, CSS, JS, deployed on GitHub Pages</p>
+        <img src="images/cyber-security-concept-digital-art.jpg" alt="Cyber Portfolio" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'400\' height=\'200\' viewBox=\'0 0 400 200\'%3E%3Crect width=\'400\' height=\'200\' fill=\'%231a2a3a\'/%3E%3Ctext x=\'60\' y=\'120\' fill=\'%2300ffcc\' font-size=\'24\' font-family=\'Roboto\'%3E📁 Portfolio%3C/text%3E%3C/svg%3E'">
+        <h3>Cyber Portfolio Website</h3>
+        <p>Dark themed, responsive, with security enthusiast context. Deployed on GitHub Pages.</p>
         <a href="#" class="btn-small">Live Demo</a>
+        <a href="#" class="btn-small">GitHub</a>
+      </div>
+      <!-- Project 3: Network Scanner UI -->
+      <div class="project-card">
+        <img src="images/cyber-security-concept-digital-art.jpg" alt="Network scanner" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'400\' height=\'200\' viewBox=\'0 0 400 200\'%3E%3Crect width=\'400\' height=\'200\' fill=\'%231a2a3a\'/%3E%3Ctext x=\'50\' y=\'120\' fill=\'%2300ffcc\' font-size=\'24\' font-family=\'Roboto\'%3E📡 NetScan%3C/text%3E%3C/svg%3E'">
+        <h3>Network Scanner UI</h3>
+        <p>React‑based interface for Nmap results visualisation (concept). Demonstrates network interest.</p>
+        <a href="#" class="btn-small">Code</a>
+        <a href="#" class="btn-small">Preview</a>
+      </div>
+      <!-- Project 4: Honeypot Dashboard -->
+      <div class="project-card">
+        <img src="images/cyber-security-concept-digital-art.jpg" alt="Honeypot" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'400\' height=\'200\' viewBox=\'0 0 400 200\'%3E%3Crect width=\'400\' height=\'200\' fill=\'%231a2a3a\'/%3E%3Ctext x=\'70\' y=\'120\' fill=\'%2300ffcc\' font-size=\'24\' font-family=\'Roboto\'%3E🍯 Honeypot%3C/text%3E%3C/svg%3E'">
+        <h3>Honeypot Dashboard</h3>
+        <p>Real‑time attack map using Three.js (academic project). Showcases cyber security skills.</p>
+        <a href="#" class="btn-small">Demo</a>
         <a href="#" class="btn-small">GitHub</a>
       </div>
     </div>
   </section>
 
-  <!-- SKILLS SECTION -->
-  <section class="skills">
-    <h2>My Skills</h2>
+  <!-- SKILLS SECTION (expanded) -->
+  <section id="skills" class="skills">
+    <h2>Technical <span class="accent">Skills</span></h2>
     <div class="skill-grid">
-      <div class="skill">HTML</div>
-      <div class="skill">CSS</div>
-      <div class="skill">JavaScript</div>
+      <!-- Frontend / Web design -->
+      <div class="skill">HTML5</div>
+      <div class="skill">CSS3</div>
+      <div class="skill">JavaScript (ES6)</div>
       <div class="skill">React</div>
+      <div class="skill">Responsive Design</div>
+      <div class="skill">Figma</div>
+      <!-- Cyber security -->
+      <div class="skill">Kali Linux</div>
+      <div class="skill">Wireshark</div>
+      <div class="skill">Nmap</div>
+      <div class="skill">Metasploit</div>
+      <div class="skill">Burp Suite</div>
+      <!-- Networking -->
+      <div class="skill">TCP/IP</div>
+      <div class="skill">VLANs</div>
+      <div class="skill">pfSense</div>
+      <div class="skill">VPN</div>
+      <!-- Tools -->
       <div class="skill">Git & GitHub</div>
+      <div class="skill">Blender (basics)</div>
+    </div>
+  </section>
+
+  <!-- EDUCATION / EXPERIENCE (credibility) -->
+  <section class="education-section">
+    <div class="edu-grid">
+      <div class="edu-card">
+        <h3 class="accent">📘 Education</h3>
+        <p><strong>B.Sc. IT – Cybersecurity major</strong> (2025) – Metropolitan University</p>
+        <p><strong>Cisco CCNA</strong> (in progress)</p>
+      </div>
+      <div class="edu-card">
+        <h3 class="accent">💼 Experience</h3>
+        <p><strong>Junior Network Analyst (intern)</strong> – SecureLink (2024)</p>
+        <p><strong>Freelance Web Designer</strong> – 2023–present</p>
+      </div>
     </div>
   </section>
 
   <!-- CONTACT SECTION -->
-  <section class="contact">
-    <h2>Contact Me</h2>
-    <p>Feel free to reach out via email or LinkedIn!</p>
-    <a href="mailto:okellomaxwelotien@gmail.com" class="btn">Email Me</a>
-    <a href="https://www.linkedin.com/in/MaxwelOkello/" target="_blank" class="btn">LinkedIn</a>
+  <section id="contact" class="contact">
+    <h2>Contact <span class="accent">Me</span></h2>
+    <p>Feel free to reach out for collaborations, security discussions, or web design projects.</p>
+    <div class="contact-buttons">
+      <a href="mailto:okellomaxwelotien@gmail.com" class="btn">📧 Email Me</a>
+      <a href="https://www.linkedin.com/in/MaxwelOkello/" target="_blank" class="btn btn-outline">🔗 LinkedIn</a>
+    </div>
+    <!-- small feature badges -->
+    <div class="feature-badges">
+      <span>✓ responsive design</span>
+      <span>✓ vulnerability assessment</span>
+      <span>✓ network automation</span>
+    </div>
   </section>
 
+  <!-- Footer (name appears here) -->
+  <footer>
+    <div class="footer-content">
+      <div>
+        <span class="footer-name">Maxwel Okello</span>
+        <span class="footer-tag">IT graduate · cyber · network · web</span>
+      </div>
+      <div>
+        <a href="#">GitHub</a>
+        <a href="#">Twitter</a>
+      </div>
+      <div class="footer-copy">© 2025 Max</div>
+    </div>
+  </footer>
+
+  <!-- Link to external JavaScript (separated) -->
   <script src="script.js"></script>
 </body>
 </html>
