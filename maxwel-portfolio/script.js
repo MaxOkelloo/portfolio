@@ -14,3 +14,6 @@ window.addEventListener('scroll', () => {
     }
   });
 });
+
+// Trigger once to show any visible section on load
+window.dispatchEvent(new Event('scroll'));
