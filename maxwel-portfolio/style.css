@@ -1,19 +1,8 @@
-// Simple fade-in effect on scroll
-const sections = document.querySelectorAll('section');
+section {
+  opacity: 0;
+  transition: opacity 0.6s ease-in;
+}
 
-window.addEventListener('scroll', () => {
-  const triggerBottom = window.innerHeight / 5 * 4;
-
-  sections.forEach(section => {
-    const sectionTop = section.getBoundingClientRect().top;
-
-    if(sectionTop < triggerBottom) {
-      section.classList.add('show');
-    } else {
-      section.classList.remove('show');
-    }
-  });
-});
-
-// Trigger once to show any visible section on load
-window.dispatchEvent(new Event('scroll'));
+section.show {
+  opacity: 1;
+}
